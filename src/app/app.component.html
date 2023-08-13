@@ -1,0 +1,12 @@
+<mat-toolbar class="w-75 mx-auto my-4 d-flex justify-content-between"
+>
+    <span>CRYPTO CHECKER YT</span>
+    <mat-form-field>
+        <mat-select (valueChange)="sendCurrency($event)" class="text-sm" [(ngModel)]="selectedCurrency">
+            <mat-option value="USD">Dolares</mat-option>
+            <mat-option value="PEN">Soles</mat-option>
+            <mat-option value="EUR">Euros</mat-option>
+        </mat-select>
+    </mat-form-field>
+</mat-toolbar>
+<router-outlet></router-outlet>
